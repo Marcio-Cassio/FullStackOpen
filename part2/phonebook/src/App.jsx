@@ -11,7 +11,7 @@ const App = () => {
   const [newNumber, setNewNumber] = useState('')
   const [filter, setFilter] = useState('')
   const [notificationMessage, setNotificationMessage] = useState(null)
-  const [notificationType, setNotificationType] = useState('sucess')
+  const [notificationType, setNotificationType] = useState('success')
 
   useEffect(() => {
     personService.getAll().then(response => {
