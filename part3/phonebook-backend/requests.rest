@@ -18,3 +18,12 @@ Content-Type: application/json
 
 ### Delete person
 DELETE http://localhost:3001/api/persons/1
+
+### Add person (POST) - morgan
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "Marcio",
+  "number": "98272878237"
+}
