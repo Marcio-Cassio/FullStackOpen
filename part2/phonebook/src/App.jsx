@@ -98,6 +98,9 @@ const App = () => {
       setNewName('')
       setNewNumber('')
     })
+    .catch(error => {
+      showNotification(error.response.data.error, 'error')
+    })
   }
 
   const personsToShow = persons.filter((person) => 
